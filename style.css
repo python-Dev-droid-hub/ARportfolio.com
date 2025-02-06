@@ -71,7 +71,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -91,7 +91,7 @@ body {
     position: relative;
     z-index: 2;
     max-width: 500px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .greeting {
@@ -136,8 +136,8 @@ body {
     position: absolute;
     right: 17.5%;
     bottom: 0;
-    width: 40%;
-    height: 95vh;
+    width: 35%;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -147,7 +147,7 @@ body {
 
 .hero-image img {
     width: auto;
-    height: 100%;
+    height: 95%;
     max-width: none;
     object-fit: contain;
     object-position: bottom;
@@ -184,30 +184,18 @@ body {
     }
 
     .hero {
-        flex-direction: column;
-        text-align: center;
+        min-height: 85vh;
         padding-top: 4rem;
         background: linear-gradient(
             to bottom,
             var(--darker-bg) 40%,
             var(--primary-color) 60%
         );
-        min-height: 100vh;
-        position: relative;
-        justify-content: flex-start;
-        overflow: visible;
-        padding-bottom: 0;
     }
 
     .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1rem;
         margin: 0;
-        width: 100%;
-        position: relative;
-        z-index: 2;
+        padding: 0 1rem;
     }
 
     .greeting {
@@ -229,23 +217,13 @@ body {
     }
 
     .hero-image {
-        position: relative;
-        width: 100%;
-        height: 55vh;
+        height: 45vh;
         margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        z-index: 1;
     }
 
     .hero-image img {
-        width: auto;
         height: 100%;
-        max-width: 85%;
-        object-fit: contain;
-        object-position: bottom;
+        max-width: 75%;
     }
 
     .about-content {
@@ -298,12 +276,8 @@ body {
 
 @media (max-width: 480px) {
     .hero {
+        min-height: 80vh;
         padding-top: 3.5rem;
-        background: linear-gradient(
-            to bottom,
-            var(--darker-bg) 35%,
-            var(--primary-color) 65%
-        );
     }
 
     .name {
@@ -311,11 +285,11 @@ body {
     }
 
     .hero-image {
-        height: 50vh;
+        height: 40vh;
     }
 
     .hero-image img {
-        max-width: 80%;
+        max-width: 70%;
     }
 
     .role {
